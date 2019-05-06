@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Home from "./Home";
-import View from "../../components/View";
+import Button from "../../components/Button";
 
 class HomeContainer extends Component {
   state = {
@@ -23,7 +23,7 @@ class HomeContainer extends Component {
   render() {
     return (
       <div>
-        <View handleSubmit={this.handleSubmit} />
+        <Button handleSubmit={this.handleSubmit} />
         <Home articles={this.state.articles} />;
       </div>
     );
